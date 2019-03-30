@@ -24,6 +24,7 @@ receiver.balance = receiver.balance + amount
 @status = "complete"
 if sender.valid? == false
   return "Transaction rejected. Please check your account balance."
+  @status = "rejected"
 # receiver.balance
   end
 end
