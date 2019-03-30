@@ -16,6 +16,8 @@ end
 
 def execute_transaction
 #need to transfer from the sender account to the receiver account
+if sender.valid? == false
+  puts "Transaction rejected. Please check your account balance."
 sender.balance = sender.balance - amount
 receiver.balance = receiver.balance + amount
 @status = "complete"
