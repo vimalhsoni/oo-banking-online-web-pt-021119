@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 
 class Transfer
   # your code here
@@ -17,7 +17,7 @@ class Transfer
 end
 
 def execute_transaction
-  binding.pry
+  # binding.pry
 #need to transfer from the sender account to the receiver account
 sender.balance = sender.balance - amount
 receiver.balance = receiver.balance + amount
