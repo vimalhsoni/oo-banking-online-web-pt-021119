@@ -16,10 +16,6 @@ end
 
 def execute_transaction
 #need to transfer from the sender account to the receiver account
-if status = "complete"
-sender.balance
-receiver.balance
-elsif status = "pending"
 sender.balance = sender.balance - amount
 receiver.balance = receiver.balance + amount
 @status = "complete"
