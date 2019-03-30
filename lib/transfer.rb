@@ -21,7 +21,6 @@ receiver.balance = receiver.balance + amount
 @status = "complete"
 # receiver.balance
 end
-end
 
 
 
