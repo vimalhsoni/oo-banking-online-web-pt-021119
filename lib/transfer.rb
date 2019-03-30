@@ -18,6 +18,7 @@ def execute_transaction
 #need to transfer from the sender account to the receiver account
 sender.balance = sender.balance - amount
 receiver.balance = receiver.balance + amount
+@status = "complete"
 # receiver.balance
 end
 
