@@ -14,5 +14,12 @@ class Transfer
     @receiver.valid?
 end
 
+def execute_transaction
+#need to transfer from the sender account to the receiver account
+sender.balance = @balance - amount
+receiver.balance - @balance - amount
+end
+
+
 
 end
