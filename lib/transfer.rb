@@ -26,9 +26,13 @@ receiver.balance = receiver.balance + amount
 if sender.valid? == false
   @status = "rejected"
   return "Transaction rejected. Please check your account balance."
+if @status == "complete"
+  sender.balance
+  receiver.balance
 # receiver.balance
     end
   end
+end
 end
 
 def reverse_transfer
