@@ -16,8 +16,8 @@ end
 
 def execute_transaction
 #need to transfer from the sender account to the receiver account
-sender.balance 
-receiver.balance
+sender.balance
+# receiver.balance
 end
 
 
