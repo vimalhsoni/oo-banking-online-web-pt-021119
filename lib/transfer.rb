@@ -19,7 +19,7 @@ end
 def execute_transaction
   # binding.pry
 #need to transfer from the sender account to the receiver account
-if sender.valid? == true
+if sender.valid? == true && @status == "pending"
 sender.balance = sender.balance - amount
 receiver.balance = receiver.balance + amount
 @status = "complete"
